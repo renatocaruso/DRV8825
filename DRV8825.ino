@@ -12,7 +12,8 @@ void loop() {
                                       //                                2 = 1/4
                                       //                                3 = 1/8
                                       //                                4 = 1/16
-                                      //                                5 = 1/32                        
-motorA.desativa();  //  corta a energia das bobinas pra deixar o motor 'frouxo' (sem torque de retenção)
-motorA.ativa();     //  retoma
+                                      //                                5 = 1/32    
+delay(2); // observar caracteristicas de rotação e ressonância
+//motorA.desativa();  //  corta a energia das bobinas pra deixar o motor 'frouxo' (sem torque de retenção)
+//motorA.ativa();     //  retoma
 }
