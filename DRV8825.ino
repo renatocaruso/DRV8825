@@ -1,6 +1,6 @@
-#include "DVR8825.h"
-                                       // DVR8825 motorA ( pin_passo, pin_direção );   ou 
-DVR8825 motorA(1, 2, 10, 11, 12, 13);  // DVR8825 motorA ( pin_passo, pin_direção, pin_mo0, pin_mo1, pin_mo2, pin_sleep );
+#include "DRV8825.h"
+                                       // DRV8825 motorA ( pin_passo, pin_direção );   ou 
+DRV8825 motorA(1, 2, 10, 11, 12, 13);  // DRV8825 motorA ( pin_passo, pin_direção, pin_mo0, pin_mo1, pin_mo2, pin_sleep );
 
 void setup() {
 
