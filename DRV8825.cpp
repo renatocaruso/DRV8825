@@ -1,11 +1,11 @@
 /*
-Polulu DVR8825
+Polulu DRV8825
 10/2015 - Belo Horizonte
 Renato Caruso (facebook/renatocarusos)
 "Thanks Felipe"
 */
-#include "DVR8825.h"
-DVR8825::DVR8825(int pas, int sen) 
+#include "DRV8825.h"
+DRV8825::DRV8825(int pas, int sen) 
 {
   pinMode( pas, OUTPUT);
   pinMode( sen, OUTPUT);
@@ -13,7 +13,7 @@ DVR8825::DVR8825(int pas, int sen)
   this-> _sen = sen;
   _mode = 0;
 }
-DVR8825::DVR8825(int pas, int sen, int mo0, int mo1, int mo2, int slp) 
+DRV8825::DRV8825(int pas, int sen, int mo0, int mo1, int mo2, int slp) 
 {
   pinMode( pas, OUTPUT);
   pinMode( sen, OUTPUT);
@@ -28,15 +28,15 @@ DVR8825::DVR8825(int pas, int sen, int mo0, int mo1, int mo2, int slp)
   this-> _mo2 = mo2;
   this-> _slp = slp;
   _mode = 1;
-  DVR8825::ativa();
+  DRV8825::ativa();
 }
-void DVR8825::ativa(){
+void DRV8825::ativa(){
   digitalWrite(_slp, HIGH);
 }
-void DVR8825::desativa(){
+void DRV8825::desativa(){
   digitalWrite(_slp, LOW);
 }
-void DVR8825::marche(int antih, int fracao)
+void DRV8825::marche(int antih, int fracao)
 {
 switch (_mode)
 {
