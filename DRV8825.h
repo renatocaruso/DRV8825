@@ -5,7 +5,7 @@ Renato Caruso (facebook/renatocarusos)
 "Thanks Felipe"
 */
 #ifndef DRV8825_h
-#define DRVR8825_h
+#define DRV8825_h
 
 #include "Arduino.h"
 
